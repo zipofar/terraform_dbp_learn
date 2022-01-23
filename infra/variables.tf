@@ -3,27 +3,54 @@ variable "region" {
   type = string
 }
 
+variable "cidr" {
+  description = "The CIDR block for the VPC."
+}
+
+variable "public_subnets" {
+  description = "List of public subnets"
+}
+
+variable "private_subnets" {
+  description = "List of private subnets"
+}
+
+variable "availability_zones" {
+  description = "List of availability zones"
+}
+
+variable "container_port" {
+  description = "Container Port"
+}
+
+variable "project" {
+  description = "Project Name"
+}
+
+variable "environment" {
+  description = "Environment"
+}
+
+variable "vpc_id" {
+  description = "VPC Id"
+}
+
+variable "app_name" {
+  description = "VPC Id"
+}
+
 variable "image" {
-  description = "container image you will run on the instance"
-  type = string
+  description = "Docker Image Path"
 }
 
-variable "instance_key_file" {
-  description = "public key path"
-  type = string
+variable "task_cpu" {
+  description = "Task CPU"
 }
 
-variable "instance_ami" {
-  description = "AWS AMI"
-  type = string
+variable "task_memory" {
+  description = "Task Memory"
 }
 
-variable "instance_user" {
-  description = "instance user"
-  type = string
-}
-
-variable "env" {
-  description = "ssh env"
-  type        = string
+variable "secrets" {
+  description = "Secrets"
 }

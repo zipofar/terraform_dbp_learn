@@ -1,0 +1,3 @@
+variable "map" {
+  description = "Variables"
+}
