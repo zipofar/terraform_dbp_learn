@@ -54,3 +54,5 @@ variable "task_memory" {
 variable "secrets" {
   description = "Secrets"
 }
+
+variable "domain" {}

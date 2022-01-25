@@ -53,3 +53,7 @@ variable "variables" {
 variable "secrets" {
   description = "Secrets"
 }
+
+variable "domain" {
+  description = "Domain"
+}

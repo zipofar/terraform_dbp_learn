@@ -21,3 +21,5 @@ variable "vpc_id" {
 variable "health_check_path" {
   description = "Health Check Path Id"
 }
+
+variable "certificate_arn" {}
